@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us — Shop With Mojo</title>
-  <meta name="description" content="Get in touch with Shop With Mojo. Email, phone, and support hours for questions about orders, products, and more.">
+  <meta name="description" content="Get in touch with Shop With Mojo. We're here to help with orders, products, and everything in between.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -25,14 +25,17 @@
         <a href="index.html#about">About</a>
         <a href="contact.html">Contact</a>
       </div>
+      <a href="index.html" class="cart-btn" aria-label="Shopping cart">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+      </a>
     </div>
   </nav>
 
-  <!-- Hero -->
+  <!-- Page Hero -->
   <section class="page-hero">
     <p class="hero-tag">Get in Touch</p>
     <h1>Contact Us</h1>
-    <p>We're here to help. Whether it's a question about an order, a product, or just want to say hi — we'd love to hear from you.</p>
+    <p>Have a question, concern, or just want to chat about herbs? We'd love to hear from you.</p>
   </section>
 
   <!-- Breadcrumb -->
@@ -46,72 +49,68 @@
     <div class="contact-grid">
       <div class="contact-card">
         <h3>📧 Email Us</h3>
-        <p><strong>General Inquiries:</strong><br><a href="mailto:hello@shopwithmojo.com">hello@shopwithmojo.com</a></p>
-        <p><strong>Order Support:</strong><br><a href="mailto:support@shopwithmojo.com">support@shopwithmojo.com</a></p>
-        <p><strong>Wholesale & Partnerships:</strong><br><a href="mailto:partners@shopwithmojo.com">partners@shopwithmojo.com</a></p>
+        <p><strong>Customer Support</strong><br><a href="mailto:support@shopwithmojo.com">support@shopwithmojo.com</a></p>
+        <p><strong>Wholesale Inquiries</strong><br><a href="mailto:wholesale@shopwithmojo.com">wholesale@shopwithmojo.com</a></p>
+        <p><strong>Press & Partnerships</strong><br><a href="mailto:hello@shopwithmojo.com">hello@shopwithmojo.com</a></p>
+        <p>We respond to all emails within <strong>24–48 hours</strong> during business days.</p>
       </div>
+
       <div class="contact-card">
         <h3>📞 Call Us</h3>
-        <p><strong>Phone:</strong><br><a href="tel:+18005551234">1-800-555-MOJO (6656)</a></p>
-        <p><strong>Hours:</strong><br>Monday – Friday: 9:00 AM – 6:00 PM EST<br>Saturday: 10:00 AM – 4:00 PM EST<br>Sunday: Closed</p>
+        <p><strong>Phone:</strong> <a href="tel:+18005551234">(800) 555-1234</a></p>
+        <p><strong>Hours:</strong><br>Monday – Friday: 9 AM – 6 PM EST<br>Saturday: 10 AM – 4 PM EST<br>Sunday: Closed</p>
+        <p>For faster service, have your order number ready when you call.</p>
       </div>
     </div>
 
     <div class="contact-grid">
       <div class="contact-card">
-        <h3>🏢 Office Address</h3>
-        <p><strong>Shop With Mojo</strong><br>123 Botanical Lane, Suite 200<br>Portland, OR 97201<br>United States</p>
-        <p style="font-size: 0.9rem; color: var(--text-muted);">Our office is not a retail location. Please do not send returns to this address without a return authorization number.</p>
-      </div>
-      <div class="contact-card">
         <h3>💬 Live Chat</h3>
-        <p>Chat with our support team in real-time during business hours.</p>
-        <p><strong>Availability:</strong><br>Monday – Friday: 9:00 AM – 6:00 PM EST</p>
-        <p style="color: var(--accent); font-weight: 500;">Coming soon — we're setting this up!</p>
+        <p>Click the chat icon in the bottom-right corner of any page to start a live conversation with our support team.</p>
+        <p><strong>Available:</strong> Monday – Friday, 9 AM – 5 PM EST</p>
       </div>
-    </div>
 
-    <h2>How Can We Help?</h2>
-    <div class="info-grid">
-      <div class="info-card">
-        <span class="info-icon">📦</span>
-        <h3>Order Issues</h3>
-        <p>Missing package, wrong item, or damaged goods? Let us know within 48 hours and we'll make it right.</p>
-      </div>
-      <div class="info-card">
-        <span class="info-icon">🌿</span>
-        <h3>Product Questions</h3>
-        <p>Curious about sourcing, organic certifications, or how to use a specific herb? We love nerd questions.</p>
-      </div>
-      <div class="info-card">
-        <span class="info-icon">🔄</span>
-        <h3>Returns & Exchanges</h3>
-        <p>Need to return something? Check our <a href="returns.html">Returns page</a> or email us to start the process.</p>
+      <div class="contact-card">
+        <h3>📬 Mailing Address</h3>
+        <p><strong>Shop With Mojo</strong><br>
+        123 Herb Garden Lane<br>
+        Suite 200<br>
+        Portland, OR 97201</p>
+        <p>Please note: our warehouse is not open to the public.</p>
       </div>
     </div>
 
     <h2>Send Us a Message</h2>
+    <p>Fill out the form below and we'll get back to you within 24–48 hours.</p>
+
     <div class="tracker-form">
-      <form onsubmit="event.preventDefault(); this.reset(); showToast('Message sent! We\'ll get back to you within 24 hours.');">
-        <label for="name">Your Name</label>
-        <input type="text" id="name" placeholder="Jane Doe" required>
+      <form onsubmit="event.preventDefault(); alert('Thanks for reaching out! We\'ll be in touch soon.');">
+        <label for="contact-name">Your Name</label>
+        <input type="text" id="contact-name" placeholder="Jane Doe" required>
 
-        <label for="email">Email Address</label>
-        <input type="email" id="email" placeholder="jane@example.com" required>
+        <label for="contact-email">Email Address</label>
+        <input type="email" id="contact-email" placeholder="jane@example.com" required>
 
-        <label for="subject">Subject</label>
-        <input type="text" id="subject" placeholder="Order #1234 question" required>
+        <label for="contact-order">Order Number (optional)</label>
+        <input type="text" id="contact-order" placeholder="e.g. SWM-12345">
 
-        <label for="message">Message</label>
-        <input type="text" id="message" placeholder="Tell us how we can help..." required>
+        <label for="contact-message">Message</label>
+        <textarea id="contact-message" rows="5" placeholder="How can we help?" required style="width:100%;padding:14px 18px;border:1px solid var(--border);border-radius:var(--radius);font-size:1rem;font-family:var(--font-body);background:#fff;outline:none;margin-bottom:16px;resize:vertical;"></textarea>
 
-        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+        <button type="submit" class="btn btn-primary">Send Message</button>
       </form>
     </div>
 
-    <p style="text-align: center; color: var(--text-muted); font-size: 0.9rem;">We typically respond within 24 hours on business days.</p>
+    <h2>Quick Links</h2>
+    <p>Looking for quick answers? Check out these resources:</p>
+    <ul>
+      <li><a href="faq.html">Frequently Asked Questions</a> — Common questions about orders, products, and shipping</li>
+      <li><a href="shipping.html">Shipping Policy</a> — Rates, delivery times, and international shipping</li>
+      <li><a href="returns.html">Return Policy</a> — How to return or exchange items</li>
+      <li><a href="track-order.html">Track Your Order</a> — Check your package status</li>
+    </ul>
 
-    <a href="index.html" class="back-link">← Back to Home</a>
+    <a href="index.html" class="back-link">← Back to Shop</a>
   </div>
 
   <!-- Footer -->
@@ -145,16 +144,5 @@
       <p>&copy; 2026 Shop With Mojo. All rights reserved. | shopwithmojo.com</p>
     </div>
   </footer>
-
-  <div class="toast" id="toast"></div>
-
-  <script>
-    function showToast(msg) {
-      const t = document.getElementById('toast');
-      t.textContent = msg;
-      t.classList.add('show');
-      setTimeout(() => t.classList.remove('show'), 3000);
-    }
-  </script>
 </body>
 </html>
