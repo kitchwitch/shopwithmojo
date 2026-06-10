@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop With Mojo — Organic Herbs & Spices</title>
+  <meta name="description" content="Premium organic herbs and spices sourced from around the world. Shop With Mojo brings nature's finest to your kitchen.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo">
+        <span class="logo-icon">🌿</span>
+        <span class="logo-text">Shop With<span class="logo-accent">Mojo</span></span>
+      </a>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#shop">Shop</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <button class="cart-btn" id="cartBtn" aria-label="Shopping cart">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-tag">Premium Organic Herbs</p>
+      <h1 class="hero-title">Nature's Finest,<br>Delivered to You</h1>
+      <p class="hero-subtitle">Hand-selected, ethically sourced herbs and spices from around the world. Elevate your kitchen, your wellness, and your life.</p>
+      <a href="#shop" class="btn btn-primary">Shop Collection</a>
+    </div>
+  </header>
+
+  <!-- Trust Bar -->
+  <section class="trust-bar">
+    <div class="container trust-grid">
+      <div class="trust-item">
+        <span class="trust-icon">🌱</span>
+        <span>USDA Organic</span>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon">🚚</span>
+        <span>Free Shipping $49+</span>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon">🔬</span>
+        <span>Quality Tested</span>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon">🌍</span>
+        <span>Ethically Sourced</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shop Section -->
+  <section class="shop" id="shop">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">Our Collection</p>
+        <h2 class="section-title">Premium Herbs & Spices</h2>
+        <p class="section-desc">Carefully curated, organically grown, and thoughtfully packaged for the discerning home chef and herbalist.</p>
+      </div>
+
+      <div class="product-grid">
+
+        <!-- Product 1: Chamomile -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="https://cdn11.bigcommerce.com/s-c5b72e6lyi/images/stencil/500x500/products/3308/11744/SWB_HERO_CHAMOMILE_front__47996.1778704188.jpg?c=1" alt="Organic Chamomile Flowers" loading="lazy">
+            <span class="product-badge badge-organic">Organic</span>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Chamomile Flowers</h3>
+            <p class="product-botanical">Matricaria recutita · Egypt</p>
+            <p class="product-desc">Cherished for centuries as a gentle ally for relaxation and digestive comfort. With its delicate floral aroma, it's one of the most beloved botanicals for nurturing a sense of calm and encouraging restful, natural sleep.</p>
+            <div class="product-footer">
+              <span class="product-price">From $3.99</span>
+              <button class="btn btn-add" onclick="addToCart('Chamomile Flowers')">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2: Lavender -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="https://cdn11.bigcommerce.com/s-c5b72e6lyi/images/stencil/500x500/products/820/10341/209390-01__11275_lavender__49161.1737041370.png?c=1" alt="Organic Lavender Flowers" loading="lazy">
+            <span class="product-badge badge-organic">Organic</span>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Lavender Flowers</h3>
+            <p class="product-botanical">Lavandula x intermedia · France</p>
+            <p class="product-desc">An evergreen shrub that blooms with beautiful purple flowers. This sweet herb adds a delicate floral flavor to desserts and breads. Its aromatic properties shine when infused in oils, soaps, lotions, and creams for spa-like beauty treatments.</p>
+            <div class="product-footer">
+              <span class="product-price">From $15.55</span>
+              <button class="btn btn-add" onclick="addToCart('Lavender Flowers')">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3: Peppermint -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="https://cdn11.bigcommerce.com/s-c5b72e6lyi/images/stencil/500x500/products/1411/9052/Peppermint_Leaf_209500-31__91891.1761346699.png?c=1" alt="Organic Peppermint Leaf" loading="lazy">
+            <span class="product-badge badge-organic">Organic</span>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Peppermint Leaf</h3>
+            <p class="product-botanical">Mentha piperita · United States</p>
+            <p class="product-desc">Expertly cut and sifted, offering a refreshing flavor and invigorating aroma. With a crisp, cool taste, hints of sweetness, and a slightly mentholated profile — perfect for soothing teas or adding depth to salads and dressings.</p>
+            <div class="product-footer">
+              <span class="product-price">From $8.67</span>
+              <button class="btn btn-add" onclick="addToCart('Peppermint Leaf')">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4: Rosemary -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="https://cdn11.bigcommerce.com/s-c5b72e6lyi/images/stencil/500x500/products/1131/10050/rosemary-leaf-cs-209935-3__53078.1737041384.jpg?c=1" alt="Organic Rosemary Leaf" loading="lazy">
+            <span class="product-badge badge-organic">Organic</span>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Rosemary Leaf</h3>
+            <p class="product-botanical">Rosmarinus officinalis · Morocco</p>
+            <p class="product-desc">Vibrant green and aromatic with a needle-like texture that releases a fragrant aroma. Its woodsy, slightly peppery flavor with hints of mint and lemon makes it a cherished ingredient in Mediterranean and Italian kitchens.</p>
+            <div class="product-footer">
+              <span class="product-price">From $5.25</span>
+              <button class="btn btn-add" onclick="addToCart('Rosemary Leaf')">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 5: Turmeric Root -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="https://cdn11.bigcommerce.com/s-c5b72e6lyi/images/stencil/500x500/products/1290/10301/Tumeric-Root-Powder-205400-5__11079.1737041386.jpg?c=1" alt="Turmeric Root Powder" loading="lazy">
+            <span class="product-badge badge-kosher">Kosher</span>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Turmeric Root Powder</h3>
+            <p class="product-botanical">Curcuma longa · India</p>
+            <p class="product-desc">A bright golden spice with a warm, earthy flavor and slightly peppery taste with hints of ginger. A staple in spice blends, curries, and savory dishes. Pairs beautifully with coconut milk, lentils, and vegetables.</p>
+            <div class="product-footer">
+              <span class="product-price">From $4.17</span>
+              <button class="btn btn-add" onclick="addToCart('Turmeric Root Powder')">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 6: Calendula -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="https://cdn11.bigcommerce.com/s-c5b72e6lyi/images/stencil/500x500/products/350/10563/Calendula_-_product__15837.1761348353.png?c=1" alt="Organic Calendula Flowers" loading="lazy">
+            <span class="product-badge badge-organic">Organic</span>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Calendula Flowers</h3>
+            <p class="product-botanical">Calendula officinalis · Egypt</p>
+            <p class="product-desc">The bright golden orange calendula is blooming with flower power. This annual herb delivers a beautiful floral flavor and powerful antioxidants including lutein, lycopene, and beta-carotene. Perfect for teas, salads, and garnishes.</p>
+            <div class="product-footer">
+              <span class="product-price">From $12.15</span>
+              <button class="btn btn-add" onclick="addToCart('Calendula Flowers')">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 7: Hibiscus -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="https://cdn11.bigcommerce.com/s-c5b72e6lyi/images/stencil/500x500/products/3313/11763/SWB_HERO_HIBISCUS_front__46081.1778709860.jpg?c=1" alt="Organic Hibiscus Flowers" loading="lazy">
+            <span class="product-badge badge-organic">Organic</span>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Hibiscus Flowers</h3>
+            <p class="product-botanical">Hibiscus sabdariffa · Egypt</p>
+            <p class="product-desc">Traditionally used to support heart health and overall cardiovascular wellness. Its bold, ruby-red color comes from anthocyanins — powerful plant compounds known for their antioxidant benefits. Makes a vibrant, tangy tea.</p>
+            <div class="product-footer">
+              <span class="product-price">$5.50</span>
+              <button class="btn btn-add" onclick="addToCart('Hibiscus Flowers')">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 8: Oregano -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="https://cdn11.bigcommerce.com/s-c5b72e6lyi/images/stencil/500x500/products/987/9048/Oregano_Leaf_CS_209885-31__78704.1761348198.png?c=1" alt="Organic Oregano Leaf" loading="lazy">
+            <span class="product-badge badge-organic">Organic</span>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Oregano Leaf</h3>
+            <p class="product-botanical">Origanum onites · Turkey</p>
+            <p class="product-desc">Its name means "mountain of joy" and it lives up to its moniker. This warm, aromatic, and slightly bitter herb brings delicious flavor to Italian, Greek, Turkish, and Argentinian cuisines. Contains vitamin K for bone health.</p>
+            <div class="product-footer">
+              <span class="product-price">From $28.00</span>
+              <button class="btn btn-add" onclick="addToCart('Oregano Leaf')">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container about-grid">
+      <div class="about-content">
+        <p class="section-tag">Our Story</p>
+        <h2 class="section-title">Rooted in Nature,<br>Crafted With Care</h2>
+        <p>At Shop With Mojo, we believe that the best meals start with the best ingredients. Every herb and spice in our collection is carefully sourced from organic farms around the world, quality-tested for purity, and packaged to preserve freshness.</p>
+        <p>From the lavender fields of France to the turmeric farms of India, we travel the globe to bring you nature's finest. Our commitment to ethical sourcing and sustainable practices means every purchase supports both your well-being and the planet.</p>
+      </div>
+      <div class="about-image">
+        <img src="https://cdn11.bigcommerce.com/s-c5b72e6lyi/images/stencil/500x500/products/1411/11121/SWB__B003AYEHKC-18_result__30800.1761346699.jpg?c=1" alt="Organic herbs in wooden bowls">
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter / Contact -->
+  <section class="contact" id="contact">
+    <div class="container contact-container">
+      <h2>Stay in the Loop</h2>
+      <p>Get recipes, herb spotlights, and exclusive deals delivered to your inbox.</p>
+      <form class="newsletter-form" onsubmit="event.preventDefault(); showToast('Thanks for subscribing!');">
+        <input type="email" placeholder="your@email.com" required>
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <span class="logo-icon">🌿</span>
+        <span class="logo-text">Shop With<span class="logo-accent">Mojo</span></span>
+        <p>Premium organic herbs and spices, delivered to your door.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Shop</h4>
+        <a href="#shop">All Herbs</a>
+        <a href="#shop">Organic Collection</a>
+        <a href="#shop">Spice Blends</a>
+      </div>
+      <div class="footer-links">
+        <h4>Company</h4>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+        <a href="#">Shipping Policy</a>
+      </div>
+      <div class="footer-links">
+        <h4>Support</h4>
+        <a href="#">FAQ</a>
+        <a href="#">Returns</a>
+        <a href="#">Track Order</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Shop With Mojo. All rights reserved. | shopwithmojo.com</p>
+    </div>
+  </footer>
+
+  <!-- Cart Sidebar -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button class="cart-close" id="cartClose">&times;</button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <p class="cart-empty">Your cart is empty</p>
+    </div>
+    <div class="cart-footer">
+      <button class="btn btn-primary btn-full">Checkout</button>
+    </div>
+  </aside>
+
+  <!-- Toast -->
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
